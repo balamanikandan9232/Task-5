@@ -1,0 +1,5 @@
+const shortpalindromes = (words) =>
+  words.filter((word) => word.split("").reverse().join("") === word);
+console.log(shortpalindromes(["civic", "pens", "pencil"]));
+
+output: ["civic"];

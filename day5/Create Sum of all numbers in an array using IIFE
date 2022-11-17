@@ -1,0 +1,6 @@
+(function () {
+  var a = 7;
+  var b = 9;
+  console.log([a + b]);
+})();
+output: [16];

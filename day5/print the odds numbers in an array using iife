@@ -1,0 +1,10 @@
+(function () {
+  var odd = [1, 8, 9, 6, 987];
+  for (var i = 0; i < odd.length; i++) {
+    if (odd[i] % 2 != 0) {
+      console.log([odd[i]]);
+    }
+  }
+})();
+
+output: [1][9][987];

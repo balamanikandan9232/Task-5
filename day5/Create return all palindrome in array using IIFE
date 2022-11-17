@@ -1,0 +1,11 @@
+(function () {
+  var string = ("car", "racecar");
+  var len = string.length;
+  for (var i = 0; i < len / 2; i++) {
+    if (string[i] != string[len - 1 - i]) {
+      return "It is not a palindrome";
+    }
+  }
+  console.log([string + " " + "is a palindrome"]);
+})();
+OUTPUT: ["racecar is a palindrome"];

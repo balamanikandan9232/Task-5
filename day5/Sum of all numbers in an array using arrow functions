@@ -1,0 +1,5 @@
+const bala = [6, 8, 9, 5, 4];
+const add = bala.reduce((sum, curr) => sum + curr);
+console.log([add]);
+//output:
+[32];

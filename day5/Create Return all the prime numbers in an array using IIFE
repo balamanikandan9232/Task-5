@@ -1,0 +1,19 @@
+(function () {
+  const primeis = (num) => {
+    const value = Math.floor(Math.sqrt(num));
+    for (var i = 2; i <= value; i++) {
+      if (num % i === 0) {
+        return false;
+      } else {
+        return num >= 2;
+      }
+    }
+  };
+
+  console.log(["the number 9 is the prime number is" + primeis(9)]);
+  console.log(["the number 11 is the prime number is" + primeis(11)]);
+})();
+
+output: ["the number 9 is the prime number istrue"][
+  "the number 11 is the prime number istrue"
+];

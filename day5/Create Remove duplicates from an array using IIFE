@@ -1,0 +1,17 @@
+(function () {
+  const balaArray = [1, 1, 2, 3, 4, 5, 5];
+
+  const balaArrayWithoutDuplicates = [...new Set(balaArray)];
+
+  let duplicates = [...balaArray];
+  balaArrayWithoutDuplicates.forEach((item) => {
+    const i = duplicates.indexOf(item);
+    duplicates = duplicates
+      .slice(0, i)
+      .concat(duplicates.slice(i + 1, duplicates.length));
+  });
+
+  console.log(duplicates);
+})();
+
+output: [1, 5];

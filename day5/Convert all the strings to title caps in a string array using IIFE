@@ -1,0 +1,7 @@
+(function () {
+  var fun = "hey how are you?";
+  var word = fun.toUpperCase();
+  console.log([word]);
+})();
+//output:
+["HEY HOW ARE YOU?"];
